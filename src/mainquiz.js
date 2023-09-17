@@ -48,25 +48,25 @@ function Mainquiz({ selectedquestionsarea }) {
 
   return (
     <div className="container mainquizpage flex-column align-items-start">
-      <h1 className="mb-5 fs-1">Question Number {indexofquestion + 1}</h1>
+      <h1 className="mb-5 fs-1">Question Number {indexofquestion + 1}:</h1>
       <p className="fs-5">{question.question}</p>
-      <ul>
+      <ol className="d-flex olofoptions flex-column align-items-start">
         {question.answers.map((answer, index) => (
-          <div className="fs-6" key={index}>
-            <label>
+          <div className="fs-6 divhp shadow" key={index}>
+            <label className="my-1">
               <input
                 type="radio"
-                className="me-2"
+                style={{visibility: "hidden"}}
                 name={`question-${indexofquestion}`}
                 value={answer}
                 onChange={() => handleAnswerSelect(answer)}
                 checked={selectedAnswers[indexofquestion] === answer}
               />
-              {answer}
+              <li className="ps-5 answerli py-2"> {answer}</li>
             </label>
           </div>
         ))}
-      </ul>
+      </ol>
       <div>
         {answerSelected && ( // Only display the button if an answer is selected
           <button

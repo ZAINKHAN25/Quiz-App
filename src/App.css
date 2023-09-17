@@ -2,6 +2,7 @@
 
 *{
     font-family: Poppins;
+    text-align: center;
 }
 
 .homepage, .secondpage, .mainquizpage{
@@ -32,4 +33,32 @@
 
 .headingofsecondpage{
     font-size: 45px !important;
+}
+
+.olofoptions{
+    width: 100%;
+}
+
+.divhp{
+    width: 100%;
+    text-align: left;
+
+}
+
+.divhp label{
+    width: 100%;
+}
+
+.divhp label li{
+    width: 100%;
+    text-align: left;
+}
+
+.answerli{
+    background-color: rgba(255, 255,255, 6%);
+    transition: all .5s;
+}
+
+.answerli:hover{
+    background-color: rgba(255, 255,255, 10%);
 }
