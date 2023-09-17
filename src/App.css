@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Open+Sans&family=Poppins:ital,wght@0,400;1,500;1,800&display=swap');
+
+*{
+    font-family: Poppins;
+}
+
+.homepage, .secondpage, .mainquizpage{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixedmylogo{
+    position: fixed;
+    bottom: 5px;
+    right: 15px;
+}
+
+.btnbackgroundGreen{
+    background-color: #55D209;
+    transition: all .3s;
+    border: none;
+    font-size: larger;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 30%);
+}
+
+.btnbackgroundGreen:hover{
+    background-color: rgb(60, 154, 1)
+}
+
+.headingofsecondpage{
+    font-size: 45px !important;
+}
