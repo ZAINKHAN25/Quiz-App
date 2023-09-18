@@ -49,7 +49,7 @@ function Mainquiz({ selectedquestionsarea }) {
   return (
     <div className="container mainquizpage flex-column align-items-start">
       <h1 className="mb-5 fs-1">Question Number {indexofquestion + 1}:</h1>
-      <p className="fs-5">{question.question}</p>
+      <p className="fs-5 mt-1">{question.question}</p>
       <ol className="d-flex olofoptions flex-column align-items-start">
         {question.answers.map((answer, index) => (
           <div className="fs-6 divhp shadow" key={index}>
