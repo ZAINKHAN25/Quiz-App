@@ -69,7 +69,7 @@ function Home({ megaquestionsarea, questionnumberarea, handleButtonClick }) {
 
 function Fixed() {
   return (
-    <p className='fixedmylogo'>
+    <p className='mt-1'>
       THIS PROJECT IS MADE BY ZAINKHAN25
     </p>
   );
@@ -79,7 +79,7 @@ function SecondPage({ selectedquestionsarea, handleStartTestClick }) {
   return (
     <div className='secondpage d-flex flex-column conatiner'>
       <h1 className='mb-5 headingofsecondpage fs-1'>{selectedquestionsarea.subjectname} QUIZ</h1>
-      <div className='fs-4'>TOTAL QUESTION : {selectedquestionsarea.totalquestions}</div>
+      <div className='fs-4'>TOTAL QUESTION : {selectedquestionsarea.data.length}</div>
       <div className='fs-4'>Passing Percentage : {selectedquestionsarea.passingpercentage}</div>
 
       <button

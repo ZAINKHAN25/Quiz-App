@@ -70,7 +70,7 @@ function Mainquiz({ selectedquestionsarea }) {
       <div>
         {answerSelected && ( // Only display the button if an answer is selected
           <button
-            className="btn mt-3 mx-2 btnbackgroundGreen fs-5"
+            className="btn my-3  mx-2 btnbackgroundGreen fs-5"
             onClick={handleNextQuestion}
           >
             {indexofquestion < selectedquestionsarea.data.length - 1

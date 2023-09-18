@@ -3,20 +3,23 @@
 *{
     font-family: Poppins;
     text-align: center;
+    word-wrap: break-word;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.homepage{
+    min-height: 80vh !important;
 }
 
 .homepage, .secondpage, .mainquizpage{
     width: 100vw;
-    height: 100vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.fixedmylogo{
-    position: fixed;
-    bottom: 5px;
-    right: 15px;
 }
 
 .btnbackgroundGreen{
