@@ -60,8 +60,13 @@ body{
 .answerli{
     background-color: rgba(255, 255,255, 6%);
     transition: all .5s;
+    border-radius: 8px;
 }
 
 .answerli:hover{
     background-color: rgba(255, 255,255, 10%);
+}
+
+.backgroundtrue{
+    background-color: rgba(255, 255,255, 30%) !important;
 }
